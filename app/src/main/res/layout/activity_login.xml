@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="374dp"
+        android:layout_height="353dp"
+        android:layout_marginTop="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="374dp"
+            android:layout_height="356dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="246dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/usernameError"
+                    style="@style/Widget.Design.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/prompt_username"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:singleLine="true"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passError"
+                    style="@style/Widget.Design.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/prompt_password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:singleLine="true"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/login"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-79dp"
+        android:layout_marginEnd="114dp"
+        app:srcCompat="@drawable/ensaj" />
+
+
+</RelativeLayout>

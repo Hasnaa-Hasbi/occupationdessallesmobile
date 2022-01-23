@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Occupation des salles</string>
+
+    <string name="prompt_username">Nom d\'utilisateur</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="login">Se connecter</string>
+    <string name="username_error">Veuillez entrer votre nom d\'utilisateur</string>
+    <string name="error_invalid_username">Ce nom d\'utilisateur est invalide</string>
+    <string name="password_error">Veuillez entrer un mot de passe</string>
+
+</resources>
